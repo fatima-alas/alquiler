@@ -1,0 +1,420 @@
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #151515 url(images/bg.png) repeat;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		font-weight: 300;
+		color: rgba(255,255,255,0.4);
+	}
+
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	{
+		color: #4da00c;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 1000px;
+	}
+	
+	nav span a.button{
+		background-color: rgb(12, 128, 136);
+		border-bottom-style: none;
+		color: rgb(255, 255, 255);
+		font-size: 0.9rem;
+		padding: 10px;
+		text-decoration: none;
+		font-family:Arial black;
+	}
+	div.TopMenu{/*centrar y hacer que cubra un 80% del navegador*/
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+	}
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 0 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style2
+	{
+		margin: 0;
+		padding-top: 1em;
+		list-style: none;
+	}
+	
+	ul.style2 li
+	{
+		border-top: 1px solid rgba(255,255,255,0.05);
+		padding: 0.80em 0 0.80em 0;
+		font-family: 0.80em;
+	}
+	
+	ul.style2 li:before
+	{
+		display: inline-block;
+		padding: 4px;
+		background: #DB3256;
+	}
+	
+	ul.style2 a
+	{
+		display: inline-block;
+		color: rgba(255,255,255,0.5);
+	}
+	
+	ul.style2 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 2em;
+		padding: 1em 2em 1em 2em;
+		background: #4d4baf;
+		border-radius: 30px;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #FFF;
+	}
+	
+	.button:before
+	{
+		display: inline-block;
+		background: #FFC31F;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #272925;
+	}
+
+	.button:hover{/*hacer que el color de un enlace cambie al pasar sobre el un cursor*/
+		background-color: #7f0b66;
+	}
+	
+	
+/*********************************************************************************/
+/* 3-column                                                                      */
+/*********************************************************************************/
+
+	.boxA,
+	.boxB,
+	.boxC
+	{
+		width: 320px;
+	}
+
+	.boxA,
+	.boxB
+	{
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.boxC
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* 2-column                                                                      */
+/*********************************************************************************/
+
+	.tbox1,
+	.tbox2
+	{
+		width: 490px;
+	}
+	
+	.tbox1
+	{
+		float: left;
+	}
+
+	.tbox2
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		overflow: hidden;
+		background: #000000 url(images/0img.jpg) repeat;/*imagen de cabecera*/
+	}
+
+	#header
+	{
+		overflow: hidden;
+		position: relative;
+		padding: 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+	/*Titulo de la cabecera(nombre del sitio)*/
+	#logo
+	{
+		position: absolute;
+		top: 2.5em;
+		left: 0;
+	}
+	
+	#logo h1
+	{
+		padding: 0.20em 0.50em;
+		letter-spacing: 0.10em;
+		font-size: 2.5em;
+		font-weight: 600;
+	}
+
+	#logo a
+	{
+		text-decoration: none;
+		font-family: Broadway;
+		font-size: 2rem;
+		padding: 0.20em 0.50em;;
+		text-transform: uppercase;
+		color: rgb(255, 255, 255);
+	}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+		position: absolute;
+		top: 4em;
+		right: 0;
+	}
+	
+	#menu ul
+	{
+		display: inline-block;
+	}
+	
+	#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	
+	#menu li a, #menu li span
+	{
+		padding: 1em 1.5em;
+		letter-spacing: 0.10em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.90em;
+		color: #FFF;
+	}
+	
+	#menu .current_page_item a
+	{
+		background: #b40a4b;
+		border: 1px solid #7f0b66;
+		border-radius: 20px;
+	}
+
+	#menu .current_page_item a:hover{/*hacer que el color de un enlace cambie al pasar sobre el un cursor*/
+		background-color: #7f0b66;
+	}
+
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		border-top: 20px solid #FFF;
+		border-left: 20px solid #FFF;
+		border-right: 20px solid #FFF;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page-wrapper
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		background: #FFF;
+	}
+
+	#page
+	{
+		text-align: center;
+	}
+
+	#page h2
+	{
+		padding-bottom: 0.50em;
+		text-transform: uppercase;
+		font-size: 2.6em;
+		font-weight: 300;
+		color: rgba(0,0,0,0.9);
+	}
+	
+	#page p
+	{
+		color: rgba(0,0,0,0.8);
+	}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		overflow: hidden;
+	}
+
+	#featured h2
+	{
+		padding-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1.8em;
+		font-weight: 300;
+	}
+
+	#featured img
+	{
+		margin-bottom: 2em;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	div.optioms{
+		position: right;
+	}
+	
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 1px solid rgba(255,255,255,0.05);
+	}
+	
+	#copyright p
+	{
+		letter-spacing: 0.20em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.90em;
+		color: rgba(255,255,255,0.2);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,0.4);
+	}
+
+
